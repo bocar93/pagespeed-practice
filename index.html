@@ -6,6 +6,11 @@
 <title>PageSpeed Practice</title>
 </head>
 <body>
+    # 1 Month for most static assets
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
 <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css?v=1234" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
 <link rel="stylesheet" href="side-menu.css">
 <div id="layout">
